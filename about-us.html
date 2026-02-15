@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="480" name="MobileOptimized"/>
+<title>
+   Sheries Fibronet | About Us
+  </title>
+<meta content="Today, commerce, communication, education, entertainment — all are happening on the Internet. Instead of being watchers, or readers, we are now participants and contributors. We’re uploading photos, videos and big work files. Fast download speeds used to be all we needed. Now, upload speeds are just as important." name="description"/>
+<meta content="Today, commerce, communication, education, entertainment — all are happening on the Internet. Instead of being watchers, or readers, we are now participants and contributors. We’re uploading photos, videos and big work files. Fast download speeds used to be all we needed. Now, upload speeds are just as important." name="keywords"/>
+<meta content="Sheries Fibronet | About Us" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="Today, commerce, communication, education, entertainment — all are happening on the Internet. Instead of being watchers, or readers, we are now participants and contributors. We’re uploading photos, videos and big work files. Fast download speeds used to be all we needed. Now, upload speeds are just as important." property="og:description"/>
+<meta content="www.fibronet.co.in" property="og:site_name"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="og:image"/>
+<meta content="Sheries Fibronet | About Us" property="twitter:title"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Today, commerce, communication, education, entertainment — all are happening on the Internet. Instead of being watchers, or readers, we are now participants and contributors. We’re uploading photos, videos and big work files. Fast download speeds used to be all we needed. Now, upload speeds are just as important." property="twitter:description"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="twitter:image"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="css/main-3.css" rel="stylesheet"/>
+<link href="css/main-6.css" rel="stylesheet"/>
+<script type="text/javascript">
+   (function(funcName, baseObj) {
+    // The public function name defaults to window.docReady
+    // but you can pass in your own object and own function name and those will be used
+    // if you want to put them in a different namespace
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    // call this when the document is ready
+    // this function protects itself against being called more than once
+    function ready() {
+        if (!readyFired) {
+            // this must be set to true before we start calling callbacks
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                // if a callback here happens to add new ready handlers,
+                // the docReady() function will see that it already fired
+                // and will schedule the callback to run right after
+                // this event loop finishes so all handlers will still execute
+                // in order and no new ones will be added to the readyList
+                // while we are processing the list
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            // allow any closures held by these functions to free
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    // This is the one public interface
+    // docReady(fn, context);
+    // the context argument is optional - if present, it will be passed
+    // as an argument to the callback
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        // if ready has already fired, then just schedule the callback
+        // to fire asynchronously, but right away
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            // add the function and context to the list
+            readyList.push({fn: callback, ctx: context});
+        }
+        // if document already ready to go, schedule the ready function to run
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            // otherwise if we don't have event handlers installed, install them
+            if (document.addEventListener) {
+                // first choice is DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", ready, false);
+                // backup is window load event
+                window.addEventListener("load", ready, false);
+            } else {
+                // must be IE
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+docReady(function() {
+    // code here
+    if (window.location.href.indexOf("console") == -1) {
+
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/presto_connections.js';
+            document.getElementsByTagName('body')[0].appendChild(script);
+
+            script.onload = function() {
+                console.log( 'loaded presto shopping' );
+                var initOptions = {
+                  "controller": "https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/connections_controller.html",
+                  "configParams": {
+                    "merchant_id": "5cca8fc31e4cd66c8b00209f",
+                    "app_id": "59d4cc24a4d34100046255b6",
+                    "merchant_name": "Fibronet",
+                    "merchant_logo": ""
+                  },
+                  "shoppingWindowOptions": {
+                    "environment": "production",
+                    "merchantType": "connections",
+                    "currency": "rupee"
+                  }
+                }
+                PrestoEmbedManager.init(initOptions);
+            }
+        }
+});
+  </script>
+<script async="" src="js/bundle-27.js">
+</script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160601521-43');
+  </script>
+<link href="css/main-5.css" rel="stylesheet" type="text/css"/>
+<link href="css/internal-styles.css" rel="stylesheet"/><style>/* Default fonts: Playfair Display for headings, Quicksand for body (change_default_fonts.py) */
+body, html, .viamagusPageSettings, .viamagusPageSettings .viamagus-container { font-family: 'Quicksand', sans-serif; }
+h1, h2, h3, h4, h5, h6,
+.viamagus-heading1, .viamagus-heading2, .viamagus-heading3, .viamagus-section-heading { font-family: 'Playfair Display', serif; }</style>
+<link href="imgs/image-5.webp" rel="shortcut icon" type="image/x-icon"/>
+<link href="imgs/image-5.webp" rel="apple-touch-icon" type="image/x-icon"/>
+<script src="js/bundle-7.js" type="text/javascript">
+</script>
+<script src="js/bundle-23.js" type="text/javascript">
+</script>
+<script src="js/bundle-26.js" type="text/javascript">
+</script>
+<script src="js/bundle-15.js" type="text/javascript">
+</script>
+<script src="js/bundle-1.js" type="text/javascript">
+</script>
+<script src="js/bundle-16.js" type="text/javascript">
+</script>
+<script src="js/bundle-6.js" type="text/javascript">
+</script>
+<meta content="http://www.fibronet.in/about-us.html" property="og:url"/>
+</head>
+<body>
+<script>
+   function loadViaBkgImage(){ if($('.backstretch').length){ $.backstretch('destroy',false);} }
+  </script>
+<div class="viamagusPageSettings">
+<div class="viamagus-container">
+<link href="css/main-1.css" rel="stylesheet" type="text/css"/>
+<div class="viamagus-component viamagus_header" data-component-name="Menu" data-sticky-header="true" id="viamagus_Menu_2928">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content navbar navbar-inverse" style="padding-top: 0px; padding-bottom: 0px; padding-left: 100px; padding-right: 100px; font-family: Lato; font-weight: bold !important">
+<div class="navbar-inner" data-bkg-color="" data-transparent-menu-cover-mode="false">
+<div class="viamagus-menu-top-row">
+</div>
+<div class="container menu-center">
+<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+</button>
+<div class="viamagus-business-logo" itemscope="" itemtype="http://schema.org/Organization">
+<a class="brand" href="/" itemprop="url">
+<img alt="logo" itemprop="logo" src="imgs/logo-fibronet.webp" style="width: 200px"/>
+</a>
+</div>
+<div class="collapse-center">
+<div class="nav-collapse collapse">
+<ul class="nav" id="menu-nav">
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="/" style="font-size: 15px">
+              HOME
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="about-us.html" style="font-size: 15px">
+              ABOUT US
+             </a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" style="font-size: 15px">
+              PLANS
+              <b class="caret">
+</b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="menulink" href="residential.html" style="font-size: 15px">
+                RESIDENTIAL
+               </a>
+</li>
+<li>
+<a class="menulink" href="business.html" style="font-size: 15px">
+                BUSINESS
+               </a>
+</li>
+</ul>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="contact-us.html" style="font-size: 15px">
+              CONTACT US
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="https://login.fibronet.in/customer_portal" style="font-size: 15px" target="_blank">
+              LOGIN
+             </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-section-header" data-bkg-image="" data-component-name="Section Title" id="viamagus_Section_Title_7373">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 20px; padding-bottom: 15px">
+<div class="row-fluid">
+<div class="span12">
+<div class="title-page">
+<h2 class="viamagus-section-heading title">
+<div style="text-align: center">
+            ABOUT US
+           </div>
+</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-richtext" data-bkg-image="" data-component-name="Text" id="viamagus_Text_8217">
+<div class="viamagus-component-bg-colour" style="background-color: rgba(230,230,230,1)">
+<div class="viamagus-component-content" style="padding-top: 10px; padding-bottom: 10px">
+<div class="row-fluid viamagus-paragraph" id="viamagus_Text_8217-content">
+<div style="text-align: center">
+<a data-active-tab="#pageTab" href="home.html#">
+<span style="color: #696969">
+           Home
+          </span>
+</a>
+<span style="color: #696969">
+          /  About us
+         </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-image-text container-fluid" data-bkg-image="" data-component-name="Image Text" id="viamagus_Image_Text_4664">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 50px; padding-bottom: 40px">
+<div class="row-fluid">
+<div class="featurette">
+<div class="viamagus-img-txt-split row-fluid">
+<div class="span6 pull-right" style="display: table">
+<div class="img-container" style="text-align: left; vertical-align: middle; display: table-cell">
+<img alt="Sherie’s fibronet delivers bandwidth that other’s can’t match — Internet upload speeds that are just as fast as download — up to 1Gbps! This allows residential and business subscribers to participate equally with the most advanced urban areas in the Internet world of commerce, communication, education, and entertainment. We provide Internet services to bring your whole household into the digital age." class="featurette-image" data-original="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/150036859943615655788m.jpeg" src="imgs/fibronet-hero.webp" style="width: 90%"/>
+</div>
+</div>
+<div class="span6 txt-container" style="display: table">
+<span class="txt-container-vertical-alignment" style="display: table-cell; vertical-align: middle">
+<div class="lead viamagus-paragraph">
+             Today, commerce, communication, education, entertainment — all are happening on the Internet. Instead of being watchers, or readers, we are now participants and contributors. We’re uploading photos, videos and big work files. Fast download speeds used to be all we needed. Now, upload speeds are just as important.
+             <br/>
+<br/>
+             This demand for bandwidth can’t be met by service providers using traditional bandwidth delivery technologies. For communities to compete for growth, improved standard of living, educational opportunity, and economic development, they must be served with fiber optic technology. Residents and businesses need the freedom to connect and the bandwidth to do it.
+             <br/>
+<br/>
+             Sherie’s fibronet delivers bandwidth that other’s can’t match — Internet upload speeds that are just as fast as download — up to 1Gbps! This allows residential and business subscribers to participate equally with the most advanced urban areas in the Internet world of commerce, communication, education, and entertainment. We provide Internet services to bring your whole household into the digital age.
+             <br/>
+<br/>
+             Whether you’re a business or residential customer, ready to meet your specific Internet needs with prompt, professional and reliable service
+            </div>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-section-divider">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 10px; padding-bottom: 10px">
+<hr class="featurette-divider" data-component-name="" id="" style="border-top: 1px solid #eee"/>
+</div>
+</div>
+</div>
+<section class="viamagus-component viamagus_circlimg" data-bkg-image="" data-component-name="columngrid" id="viamagus_columngrid_800">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 40px; padding-bottom: 50px">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span6 columngridone">
+<div class="image-alignment">
+<img align="left" alt="OUR MISSION" class="img-circle img-responsive why-section" data-original="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1495788430735Pointer128.png" src="imgs/our-mission.webp" style="height: 80px; margin: none"/>
+</div>
+<div class="columngrid-desc fixedImgAlignmnetFixed">
+<div>
+<h2 class="viamagus-heading2">
+             OUR MISSION
+            </h2>
+<div class="viamagus-paragraph">
+             Our mission is to provide highly reliable, secure and fast internet services and other related services that will assist businesses, individuals and non-profit organizations in connecting to the internet, promoting their brands and reaching out to a wide range of potential customers all over the globe via the internet.
+            </div>
+</div>
+</div>
+<div style="clear: both">
+</div>
+</div>
+<div class="span6 columngridtwo">
+<div class="image-alignment">
+<img align="left" alt="OUR VISION" class="img-circle img-responsive why-section" data-original="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1495788474510Internet1281.png" src="imgs/our-vision.webp" style="height: 80px; margin: none"/>
+</div>
+<div class="columngrid-desc fixedImgAlignmnetFixed">
+<div>
+<h2 class="viamagus-heading2">
+             OUR VISION
+            </h2>
+<div class="viamagus-paragraph">
+             Our vision is to establish a standard and world class internet service provider (ISP) company whose services and brand will not only be accepted in the state of Karnataka, but also in rest of India.
+            </div>
+</div>
+</div>
+<div style="clear: both">
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix">
+</div>
+</div>
+</div>
+</section>
+<footer class="viamagus-component viamagus_footer" data-bkg-image="" data-component-name="Footer" id="viamagus_Footer_1191">
+<div class="viamagus-component-bg-colour" style="background: rgba(7,25,78,1)">
+<div class="viamagus-component-content">
+<div class="row-fluid viamagus-paragraph">
+<div class="span6">
+<div style="text-align: center">
+<span style="color: #FFFFFF">
+           © 2026. Sherie's fibronet. All Rights Reserved.
+          </span>
+</div>
+</div>
+<div class="span6">
+<div style="text-align: center">
+<a data-active-tab="#pageTab" href="terms-and-conditions.html#">
+<span style="color: #FFFFFF">
+            Terms &amp; Conditions
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="disclaimer.html#">
+<span style="color: #FFFFFF">
+            Disclaimer
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="privacy-policy.html#">
+<span style="color: #FFFFFF">
+            Privacy Policy
+           </span>
+</a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div id="logo">
+<a class="external" href="https://propage.in" id="goUp" style="float: right" target="_blank" title="propage.in">powered by propage.in</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script src="js/bundle-17.js">
+</script>
+<script src="js/bundle-19.js">
+</script>
+<script src="js/bundle-21.js">
+</script>
+<script src="js/bundle-5.js">
+</script>
+<script src="js/bundle-14.js">
+</script>
+<script src="js/bundle-22.js">
+</script>
+<script src="js/bundle-8.js">
+</script>
+<script src="js/bundle-29.js">
+</script>
+<script src="js/bundle-28.js">
+</script>
+<script src="js/bundle-11.js">
+</script>
+<script src="js/bundle-12.js">
+</script>
+<script src="js/bundle-9.js">
+</script>
+<script src="js/bundle-25.js">
+</script>
+<script src="js/bundle-13.js">
+</script>
+<script src="js/bundle-24.js" type="text/javascript">
+</script>
+<script src="js/bundle-10.js" type="text/javascript">
+</script>
+<script src="js/bundle-2.js" type="text/javascript">
+</script>
+<script src="js/bundle-18.js" type="text/javascript">
+</script>
+<script src="js/bundle-3.js" type="text/javascript">
+</script>
+<script src="js/bundle-4.js" type="text/javascript">
+</script>
+<script>
+   $(function() {	Viamagus_Website_Loader._init();	Viamagus_Form_Loader._init();});
+  </script>
+</body>
+</html>

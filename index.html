@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="480" name="MobileOptimized"/>
+<title>
+   Sherie's Fibronet | Internet Service Provider | Home
+  </title>
+<meta content="Sherie’s Fibronet provides “ Fiber to the home”(FTTH) that means faster downloads, less buffering, and an ultra-reliable internet connection for all the devices in your home or office . FTTH as a technology, enables the optical fiber to perform as a neutral-cum-independent network to carry multiple services to enhance &amp; ensure higher level of subscriber satisfaction. More than 1000’s of homes are already connected to our cutting edge fiber network. Enjoy faster service. Connect now." name="description"/>
+<meta content="Sherie’s Fibronet provides “ Fiber to the home”(FTTH) that means faster downloads, less buffering, and an ultra-reliable internet connection for all the devices in your home or office . FTTH as a technology, enables the optical fiber to perform as a neutral-cum-independent network to carry multiple services to enhance &amp; ensure higher level of subscriber satisfaction. More than 1000’s of homes are already connected to our cutting edge fiber network. Enjoy faster service. Connect now." name="keywords"/>
+<meta content="Sherie" fibronet="" home'="" internet="" property="og:title" provider="" s="" service="" |=""/>
+<meta content="website" property="og:type"/>
+<meta content="Sherie’s Fibronet provides “ Fiber to the home”(FTTH) that means faster downloads, less buffering, and an ultra-reliable internet connection for all the devices in your home or office . FTTH as a technology, enables the optical fiber to perform as a neutral-cum-independent network to carry multiple services to enhance &amp; ensure higher level of subscriber satisfaction. More than 1000’s of homes are already connected to our cutting edge fiber network. Enjoy faster service. Connect now." property="og:description"/>
+<meta content="www.fibronet.in" property="og:site_name"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="og:image"/>
+<meta content="Sherie" fibronet="" home'="" internet="" property="twitter:title" provider="" s="" service="" |=""/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Sherie’s Fibronet provides “ Fiber to the home”(FTTH) that means faster downloads, less buffering, and an ultra-reliable internet connection for all the devices in your home or office . FTTH as a technology, enables the optical fiber to perform as a neutral-cum-independent network to carry multiple services to enhance &amp; ensure higher level of subscriber satisfaction. More than 1000’s of homes are already connected to our cutting edge fiber network. Enjoy faster service. Connect now." property="twitter:description"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="twitter:image"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="css/main-3.css" rel="stylesheet"/>
+<link href="css/main-6.css" rel="stylesheet"/>
+<script type="text/javascript">
+   (function(funcName, baseObj) {
+    // The public function name defaults to window.docReady
+    // but you can pass in your own object and own function name and those will be used
+    // if you want to put them in a different namespace
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    // call this when the document is ready
+    // this function protects itself against being called more than once
+    function ready() {
+        if (!readyFired) {
+            // this must be set to true before we start calling callbacks
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                // if a callback here happens to add new ready handlers,
+                // the docReady() function will see that it already fired
+                // and will schedule the callback to run right after
+                // this event loop finishes so all handlers will still execute
+                // in order and no new ones will be added to the readyList
+                // while we are processing the list
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            // allow any closures held by these functions to free
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    // This is the one public interface
+    // docReady(fn, context);
+    // the context argument is optional - if present, it will be passed
+    // as an argument to the callback
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        // if ready has already fired, then just schedule the callback
+        // to fire asynchronously, but right away
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            // add the function and context to the list
+            readyList.push({fn: callback, ctx: context});
+        }
+        // if document already ready to go, schedule the ready function to run
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            // otherwise if we don't have event handlers installed, install them
+            if (document.addEventListener) {
+                // first choice is DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", ready, false);
+                // backup is window load event
+                window.addEventListener("load", ready, false);
+            } else {
+                // must be IE
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+docReady(function() {
+    // code here
+    if (window.location.href.indexOf("console") == -1) {
+
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/presto_connections.js';
+            document.getElementsByTagName('body')[0].appendChild(script);
+
+            script.onload = function() {
+                console.log( 'loaded presto shopping' );
+                var initOptions = {
+                  "controller": "https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/connections_controller.html",
+                  "configParams": {
+                    "merchant_id": "5cca8fc31e4cd66c8b00209f",
+                    "app_id": "59d4cc24a4d34100046255b6",
+                    "merchant_name": "Fibronet",
+                    "merchant_logo": ""
+                  },
+                  "shoppingWindowOptions": {
+                    "environment": "production",
+                    "merchantType": "connections",
+                    "currency": "rupee"
+                  }
+                }
+                PrestoEmbedManager.init(initOptions);
+            }
+        }
+});
+  </script>
+<script async="" src="js/bundle-27.js">
+</script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160601521-43');
+  </script>
+<link href="css/main-5.css" rel="stylesheet" type="text/css"/>
+<link href="css/internal-styles.css" rel="stylesheet"/><style>/* Default fonts: Playfair Display for headings, Quicksand for body (change_default_fonts.py) */
+body, html, .viamagusPageSettings, .viamagusPageSettings .viamagus-container { font-family: 'Quicksand', sans-serif; }
+h1, h2, h3, h4, h5, h6,
+.viamagus-heading1, .viamagus-heading2, .viamagus-heading3, .viamagus-section-heading { font-family: 'Playfair Display', serif; }</style>
+<link href="imgs/image-5.webp" rel="shortcut icon" type="image/x-icon"/>
+<link href="imgs/image-5.webp" rel="apple-touch-icon" type="image/x-icon"/>
+<script src="js/bundle-7.js" type="text/javascript">
+</script>
+<script src="js/bundle-23.js" type="text/javascript">
+</script>
+<script src="js/bundle-26.js" type="text/javascript">
+</script>
+<script src="js/bundle-15.js" type="text/javascript">
+</script>
+<script src="js/bundle-1.js" type="text/javascript">
+</script>
+<script src="js/bundle-16.js" type="text/javascript">
+</script>
+<script src="js/bundle-6.js" type="text/javascript">
+</script>
+<meta content="http://www.fibronet.in/home.html" property="og:url"/>
+</head>
+<body>
+<script>
+   function loadViaBkgImage(){ if($('.backstretch').length){ $.backstretch('destroy',false);} }
+  </script>
+<div class="viamagusPageSettings">
+<div class="viamagus-container">
+<link href="css/main-1.css" rel="stylesheet" type="text/css"/>
+<div class="viamagus-component viamagus_header" data-component-name="Menu" data-sticky-header="true" id="viamagus_Menu_2928">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content navbar navbar-inverse" style="padding-top: 0px; padding-bottom: 0px; padding-left: 100px; padding-right: 100px; font-family: Lato; font-weight: bold !important">
+<div class="navbar-inner" data-bkg-color="" data-transparent-menu-cover-mode="false">
+<div class="viamagus-menu-top-row">
+</div>
+<div class="container menu-center">
+<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+</button>
+<div class="viamagus-business-logo" itemscope="" itemtype="http://schema.org/Organization">
+<a class="brand" href="/" itemprop="url">
+<img alt="logo" itemprop="logo" src="imgs/logo-fibronet.webp" style="width: 200px"/>
+</a>
+</div>
+<div class="collapse-center">
+<div class="nav-collapse collapse">
+<ul class="nav" id="menu-nav">
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="/" style="font-size: 15px">
+              HOME
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="about-us.html" style="font-size: 15px">
+              ABOUT US
+             </a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" style="font-size: 15px">
+              PLANS
+              <b class="caret">
+</b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="menulink" href="residential.html" style="font-size: 15px">
+                RESIDENTIAL
+               </a>
+</li>
+<li>
+<a class="menulink" href="business.html" style="font-size: 15px">
+                BUSINESS
+               </a>
+</li>
+</ul>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="contact-us.html" style="font-size: 15px">
+              CONTACT US
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="https://login.fibronet.in/customer_portal" style="font-size: 15px" target="_blank">
+              LOGIN
+             </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component container-fluid well well-large" data-component-name="Carousel" id="viamagus_Carousel_7463">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content">
+<div class="carousel slide carousel-fade" data-bkg-as-cover="false" data-interval="3500" data-ride="carousel" data-show-scroll-down-arrow="false" id="viamagus_Carousel_7463-slider">
+<ol class="carousel-indicators">
+<li class="" data-slide-to="0" data-target="#viamagus_Carousel_7463-slider">
+</li>
+<li class="active" data-slide-to="1" data-target="#viamagus_Carousel_7463-slider">
+</li>
+<li class="active" data-slide-to="2" data-target="#viamagus_Carousel_7463-slider">
+</li>
+</ol>
+<div class="carousel-inner">
+<div class="active item">
+<div alt="" class="carousel-img" id="viamagus_Carousel_7463-item-0" style="background: url('https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/149700462212424517766ml.jpeg'); height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover">
+</div>
+</div>
+<div class="item">
+<div alt="" class="carousel-img" id="viamagus_Carousel_7463-item-1" style="background: url('https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1496827261708student8498251280.jpeg'); height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover">
+</div>
+</div>
+<div class="item">
+<div alt="" class="carousel-img" id="viamagus_Carousel_7463-item-2" style="background: url('https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1496827436541ipad6323941280.jpeg'); height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover">
+</div>
+</div>
+</div>
+<a class="carousel-control left" data-slide="prev" href="#viamagus_Carousel_7463-slider">
+<div class="arrow">
+<img src="imgs/image-4.webp"/>
+</div>
+</a>
+<a class="carousel-control right" data-slide="next" href="#viamagus_Carousel_7463-slider">
+<div class="arrow">
+<img src="imgs/image-1.webp"/>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+     new Image().src ='https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/149700462212424517766ml.jpeg';          
+      	
+      
+          
+new Image().src ='https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1496827261708student8498251280.jpeg';          
+      	
+      
+          
+new Image().src ='https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1496827436541ipad6323941280.jpeg';
+    </script>
+<div class="viamagus-component viamagus-image-text container-fluid" data-bkg-image="" data-component-name="Image Text" id="viamagus_Image_Text_9801">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 50px; padding-bottom: 80px">
+<div class="row-fluid">
+<div class="featurette">
+<div>
+<div class="content-container">
+<h2 class="viamagus-heading2 featurette-heading">
+<div style="text-align: center">
+             BLAZING FAST INTERNET
+            </div>
+</h2>
+<div class="lead viamagus-paragraph">
+<div style="text-align: center">
+<br/>
+             Sherie’s Fibronet provides “ Fiber to the home”(FTTH) that means faster downloads, less buffering, and an ultra-reliable internet connection for all the devices in your home or office . FTTH as a technology, enables the optical fiber to perform as a neutral-cum-independent network to carry multiple services to enhance &amp; ensure higher level of subscriber satisfaction. More than 1000’s of homes are already connected to our cutting edge fiber network. Enjoy faster service. Connect now.
+             <br/>
+</div>
+</div>
+<div class="button-align" style="text-align: center">
+<a class="btn viamagus-button-default viamagus-button-" href="about-us.html" target="">
+             MORE ABOUT US
+            </a>
+</div>
+</div>
+<div style="clear: both">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-image-text container-fluid viamagus-background" data-bkg-image="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/150036835601634882955ml.jpeg" data-component-name="Image Text" id="viamagus_Image_Text_3574">
+<div class="viamagus-component-bg-colour" style="background-color: rgba(0,0,0,0.6)">
+<div class="viamagus-component-content" style="padding-top: 100px; padding-bottom: 100px">
+<div class="row-fluid">
+<div class="featurette">
+<div>
+<div class="content-container">
+<h2 class="viamagus-heading2 featurette-heading">
+<div style="text-align: center">
+<span style="color: #FFFFFF">
+              INTERNET SERVICE PROVIDER
+             </span>
+</div>
+</h2>
+<div class="lead viamagus-paragraph">
+<div style="text-align: center">
+<br/>
+<span style="font-size: 20px">
+<span style="color: #FFFFFF">
+               Sherie’s fibronet Internet is a leading Internet Service Provider. We specialize in providing ultra-fast, ultra-reliable High-Speed Broadband Internet to Residential, Small Business and Enterprises. We have the expertise needed to build and maintain carrier-grade networks to deliver the best services of any provider. Sherie’s fibronet Internet builds, maintains and controls 100% of our network, with absolutely zero reliance on "the telephone company" or any other third party providers.
+               <br/>
+<br/>
+               Since our network is 100% fiber network run directly to your home, it’s the only one that delivers consistently fast speeds, 24/7, with no connection sharing and no slowdowns — whether you’re downloading or uploading.
+               <br/>
+<br/>
+               Here at Sherie’s fibronet Internet, we are able to provide our customers with symmetrical internet speeds of up to 1 Gbps per second.
+              </span>
+</span>
+</div>
+</div>
+</div>
+<div style="clear: both">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-image-text container-fluid" data-bkg-image="" data-component-name="Image Text" id="viamagus_Image_Text_938">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 80px; padding-bottom: 80px">
+<div class="row-fluid">
+<div class="featurette">
+<div class="viamagus-img-txt-split row-fluid">
+<div class="span6 pull-left" style="display: table">
+<div class="img-container" style="text-align: center; vertical-align: middle; display: table-cell">
+<img alt="BENEFITS | Bandwidth upto 1Gbps | Symmetrical connection | Secure transmission | Reliability" class="featurette-image" data-original="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1496827257485office6055031280.jpeg" src="imgs/benefits.webp" style="width: 90%"/>
+</div>
+</div>
+<div class="span6 txt-container" style="display: table">
+<span class="txt-container-vertical-alignment" style="display: table-cell; vertical-align: middle">
+<h2 class="viamagus-heading2 featurette-heading">
+             BENEFITS
+            </h2>
+<div class="lead viamagus-paragraph">
+<span style="font-size: 20px">
+<strong>
+               1. Bandwidth upto 1Gbps:
+              </strong>
+</span>
+             Optical Fiber really have almost no limits how fast and how much information can be sent through it.
+             <br/>
+<br/>
+<span style="font-size: 20px">
+<strong>
+               2. Symmetrical connection:
+              </strong>
+</span>
+             The term “symmetrical” means that the download and upload speeds are the same.
+             <br/>
+<br/>
+<span style="font-size: 20px">
+<strong>
+               3. Secure transmission:
+              </strong>
+</span>
+             fiber-optic internet is touted as a cost effective way of instantly increasing your Internet security.
+             <br/>
+<br/>
+<span style="font-size: 20px">
+<strong>
+               4. Reliability:
+              </strong>
+</span>
+             The fiber is amazingly reliable. Nothing hurts it except a physical cut.
+            </div>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="viamagus-component viamagus_landimg" data-bkg-as-cover="false" data-component-name="Hero Section" data-image-position="50" data-img-uri="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/150036850896120469971ml.jpeg" data-portrait-img-uri="" data-show-scroll-down-arrow="false" data-type="background" id="viamagus_Hero_Section_4660" style="background-position: 50% 50%; background-image: url('https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/150036850896120469971ml.jpeg')">
+<div class="viamagus-component-bg-colour" style="background-color: rgba(0,0,0,0.19)">
+<div class="viamagus-component-content">
+<div class="box-video">
+<div class="row-fluid viamagus-hero-section-row">
+<div class="displayTable">
+<div class="displayTableCell">
+<div class="span6" id="box-left">
+<div class="hero">
+<h1 class="viamagus-heading1 header-text large">
+              For Complaints please call 7997006889
+             </h1>
+<h3 class="viamagus-heading3 tagline">
+              From 8AM to 9PM
+             </h3>
+</div>
+</div>
+<div class="span6" id="video-area">
+<br/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="viamagus-component viamagus-section-header" data-bkg-image="" data-component-name="Section Title" id="viamagus_Section_Title_8551">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 65px; padding-bottom: 0px">
+<div class="row-fluid">
+<div class="span12">
+<div class="title-page">
+<h2 class="viamagus-section-heading title">
+<div style="text-align: center">
+            Get In Touch
+           </div>
+</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus_contact viamagus_contact-form viamagus-paragraph" data-bkg-image="" data-component-name="Contact Form" id="viamagus_Contact_Form_569">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content">
+<form class="form-horizontal">
+<div class="row-fluid form-container">
+<div class="span4">
+<p class="contact-name">
+<input id="customerName" name="name" placeholder="Name" required="" type="text" value=""/>
+</p>
+<p class="contact-email">
+<input id="customerEmail" name="email" placeholder="Email Address" required="" type="email" value=""/>
+</p>
+<p class="contact-email">
+<input id="customerPhone" name="text" placeholder="Phone Number" type="text" value=""/>
+</p>
+</div>
+<div class="span4">
+<div class="vm-form-control">
+<p class="contact-message">
+<textarea cols="40" id="customerMessage" name="message" placeholder="Message" required="" rows="8"></textarea>
+</p>
+</div>
+<div class="contact-submit">
+<div class="button-align" style="text-align: left">
+<input class="btn viamagus-button-default viamagus-button-" type="submit" value="SEND"/>
+</div>
+</div>
+</div>
+<div class="span4 viamagus-contact-form-address">
+<div class="viamagus-form-alignment" itemscope="" itemtype="https://schema.org/PostalAddress">
+<ul>
+<li>
+<p>
+<i class="fa fa-map-marker">
+</i>
+<b>
+               Address
+              </b>
+</p>
+<div id="customerAddress" itemprop="streetAddress">
+              #13, 9th Cross, New Bank Colony, Chunchgatta Main Road, Konanakunte, Bangalore - 560062
+             </div>
+<br/>
+<p>
+</p>
+</li>
+<li>
+<p>
+<i class="fa fa-phone">
+</i>
+<b>
+               Phone
+              </b>
+</p>
+<div class="viamagus-customer-phoneNo" itemprop="telephone">
+              080 41488850
+             </div>
+<br/>
+<p>
+</p>
+</li>
+<li>
+<p>
+<i class="fa fa-envelope">
+</i>
+<b>
+               Email
+              </b>
+</p>
+<div class="viamagus-customer-email">
+<a href="mailto:avinashds@yahoo.com" itemprop="email" target="_top">
+               avinashds@yahoo.com
+              </a>
+</div>
+<p>
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="response">
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<footer class="viamagus-component viamagus_footer" data-bkg-image="" data-component-name="Footer" id="viamagus_Footer_1191">
+<div class="viamagus-component-bg-colour" style="background: rgba(7,25,78,1)">
+<div class="viamagus-component-content">
+<div class="row-fluid viamagus-paragraph">
+<div class="span6">
+<div style="text-align: center">
+<span style="color: #FFFFFF">
+           © 2026. Sherie's fibronet. All Rights Reserved.
+          </span>
+</div>
+</div>
+<div class="span6">
+<div style="text-align: center">
+<a data-active-tab="#pageTab" href="terms-and-conditions.html#">
+<span style="color: #FFFFFF">
+            Terms &amp; Conditions
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="disclaimer.html#">
+<span style="color: #FFFFFF">
+            Disclaimer
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="privacy-policy.html#">
+<span style="color: #FFFFFF">
+            Privacy Policy
+           </span>
+</a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div id="logo">
+<a class="external" href="https://propage.in" id="goUp" style="float: right" target="_blank" title="propage.in">powered by propage.in</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script src="js/bundle-17.js">
+</script>
+<script src="js/bundle-19.js">
+</script>
+<script src="js/bundle-21.js">
+</script>
+<script src="js/bundle-5.js">
+</script>
+<script src="js/bundle-14.js">
+</script>
+<script src="js/bundle-22.js">
+</script>
+<script src="js/bundle-8.js">
+</script>
+<script src="js/bundle-29.js">
+</script>
+<script src="js/bundle-28.js">
+</script>
+<script src="js/bundle-11.js">
+</script>
+<script src="js/bundle-12.js">
+</script>
+<script src="js/bundle-9.js">
+</script>
+<script src="js/bundle-25.js">
+</script>
+<script src="js/bundle-13.js">
+</script>
+<script src="js/bundle-24.js" type="text/javascript">
+</script>
+<script src="js/bundle-10.js" type="text/javascript">
+</script>
+<script src="js/bundle-2.js" type="text/javascript">
+</script>
+<script src="js/bundle-18.js" type="text/javascript">
+</script>
+<script src="js/bundle-3.js" type="text/javascript">
+</script>
+<script src="js/bundle-4.js" type="text/javascript">
+</script>
+<script>
+   $(function() {	Viamagus_Website_Loader._init();	Viamagus_Form_Loader._init();});
+  </script>
+</body>
+</html>

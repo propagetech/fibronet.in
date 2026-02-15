@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="480" name="MobileOptimized"/>
+<title>
+   Sheries Fibronet | Terms &amp; Conditions
+  </title>
+<meta content="Sheries Fibronet | Terms &amp; Conditions" name="description"/>
+<meta content="Sheries Fibronet | Terms &amp; Conditions" name="keywords"/>
+<meta content="Sheries Fibronet | Terms &amp; Conditions" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="Sheries Fibronet | Terms &amp; Conditions" property="og:description"/>
+<meta content="www.fibronet.co.in" property="og:site_name"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="og:image"/>
+<meta content="Sheries Fibronet | Terms &amp; Conditions" property="twitter:title"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Sheries Fibronet | Terms &amp; Conditions" property="twitter:description"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="twitter:image"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="css/main-3.css" rel="stylesheet"/>
+<link href="css/main-6.css" rel="stylesheet"/>
+<script type="text/javascript">
+   (function(funcName, baseObj) {
+    // The public function name defaults to window.docReady
+    // but you can pass in your own object and own function name and those will be used
+    // if you want to put them in a different namespace
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    // call this when the document is ready
+    // this function protects itself against being called more than once
+    function ready() {
+        if (!readyFired) {
+            // this must be set to true before we start calling callbacks
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                // if a callback here happens to add new ready handlers,
+                // the docReady() function will see that it already fired
+                // and will schedule the callback to run right after
+                // this event loop finishes so all handlers will still execute
+                // in order and no new ones will be added to the readyList
+                // while we are processing the list
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            // allow any closures held by these functions to free
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    // This is the one public interface
+    // docReady(fn, context);
+    // the context argument is optional - if present, it will be passed
+    // as an argument to the callback
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        // if ready has already fired, then just schedule the callback
+        // to fire asynchronously, but right away
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            // add the function and context to the list
+            readyList.push({fn: callback, ctx: context});
+        }
+        // if document already ready to go, schedule the ready function to run
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            // otherwise if we don't have event handlers installed, install them
+            if (document.addEventListener) {
+                // first choice is DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", ready, false);
+                // backup is window load event
+                window.addEventListener("load", ready, false);
+            } else {
+                // must be IE
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+docReady(function() {
+    // code here
+    if (window.location.href.indexOf("console") == -1) {
+
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/presto_connections.js';
+            document.getElementsByTagName('body')[0].appendChild(script);
+
+            script.onload = function() {
+                console.log( 'loaded presto shopping' );
+                var initOptions = {
+                  "controller": "https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/connections_controller.html",
+                  "configParams": {
+                    "merchant_id": "5cca8fc31e4cd66c8b00209f",
+                    "app_id": "59d4cc24a4d34100046255b6",
+                    "merchant_name": "Fibronet",
+                    "merchant_logo": ""
+                  },
+                  "shoppingWindowOptions": {
+                    "environment": "production",
+                    "merchantType": "connections",
+                    "currency": "rupee"
+                  }
+                }
+                PrestoEmbedManager.init(initOptions);
+            }
+        }
+});
+  </script>
+<script async="" src="js/bundle-27.js">
+</script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160601521-43');
+  </script>
+<link href="css/main-5.css" rel="stylesheet" type="text/css"/>
+<link href="css/internal-styles.css" rel="stylesheet"/><style>/* Default fonts: Playfair Display for headings, Quicksand for body (change_default_fonts.py) */
+body, html, .viamagusPageSettings, .viamagusPageSettings .viamagus-container { font-family: 'Quicksand', sans-serif; }
+h1, h2, h3, h4, h5, h6,
+.viamagus-heading1, .viamagus-heading2, .viamagus-heading3, .viamagus-section-heading { font-family: 'Playfair Display', serif; }</style>
+<link href="imgs/image-5.webp" rel="shortcut icon" type="image/x-icon"/>
+<link href="imgs/image-5.webp" rel="apple-touch-icon" type="image/x-icon"/>
+<script src="js/bundle-7.js" type="text/javascript">
+</script>
+<script src="js/bundle-23.js" type="text/javascript">
+</script>
+<script src="js/bundle-26.js" type="text/javascript">
+</script>
+<script src="js/bundle-15.js" type="text/javascript">
+</script>
+<script src="js/bundle-1.js" type="text/javascript">
+</script>
+<script src="js/bundle-16.js" type="text/javascript">
+</script>
+<script src="js/bundle-6.js" type="text/javascript">
+</script>
+<meta content="http://www.fibronet.in/terms-and-conditions.html" property="og:url"/>
+</head>
+<body>
+<script>
+   function loadViaBkgImage(){ if($('.backstretch').length){ $.backstretch('destroy',false);} }
+  </script>
+<div class="viamagusPageSettings">
+<div class="viamagus-container">
+<link href="css/main-1.css" rel="stylesheet" type="text/css"/>
+<div class="viamagus-component viamagus_header" data-component-name="Menu" data-sticky-header="true" id="viamagus_Menu_2928">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content navbar navbar-inverse" style="padding-top: 0px; padding-bottom: 0px; padding-left: 100px; padding-right: 100px; font-family: Lato; font-weight: bold !important">
+<div class="navbar-inner" data-bkg-color="" data-transparent-menu-cover-mode="false">
+<div class="viamagus-menu-top-row">
+</div>
+<div class="container menu-center">
+<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+</button>
+<div class="viamagus-business-logo" itemscope="" itemtype="http://schema.org/Organization">
+<a class="brand" href="/" itemprop="url">
+<img alt="logo" itemprop="logo" src="imgs/logo-fibronet.webp" style="width: 200px"/>
+</a>
+</div>
+<div class="collapse-center">
+<div class="nav-collapse collapse">
+<ul class="nav" id="menu-nav">
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="/" style="font-size: 15px">
+              HOME
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="about-us.html" style="font-size: 15px">
+              ABOUT US
+             </a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" style="font-size: 15px">
+              PLANS
+              <b class="caret">
+</b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="menulink" href="residential.html" style="font-size: 15px">
+                RESIDENTIAL
+               </a>
+</li>
+<li>
+<a class="menulink" href="business.html" style="font-size: 15px">
+                BUSINESS
+               </a>
+</li>
+</ul>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="contact-us.html" style="font-size: 15px">
+              CONTACT US
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="https://login.fibronet.in/customer_portal" style="font-size: 15px" target="_blank">
+              LOGIN
+             </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-section-header" data-bkg-image="" data-component-name="Section Title" id="viamagus_Section_Title_7373">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 20px; padding-bottom: 15px">
+<div class="row-fluid">
+<div class="span12">
+<div class="title-page">
+<h2 class="viamagus-section-heading title">
+<div style="text-align: center">
+            TERMS &amp; CONDITIONS
+           </div>
+</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-richtext" data-bkg-image="" data-component-name="Text" id="viamagus_Text_8217">
+<div class="viamagus-component-bg-colour" style="background-color: rgba(230,230,230,1)">
+<div class="viamagus-component-content" style="padding-top: 10px; padding-bottom: 10px">
+<div class="row-fluid viamagus-paragraph" id="viamagus_Text_8217-content">
+<div style="text-align: center">
+<a data-active-tab="#pageTab" href="home.html#">
+<span style="color: #696969">
+           Home
+          </span>
+</a>
+<span style="color: #696969">
+          /  Terms &amp; Conditions
+         </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-image-text container-fluid" data-bkg-image="" data-component-name="Image Text" id="viamagus_Image_Text_3574">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 50px; padding-bottom: 50px">
+<div class="row-fluid">
+<div class="featurette">
+<div>
+<div class="content-container">
+<h2 class="viamagus-heading2 featurette-heading">
+<span style="font-size: 20px">
+             PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS SITE
+            </span>
+</h2>
+<div class="lead viamagus-paragraph">
+<strong>
+             Introduction :
+            </strong>
+<br/>
+<br/>
+            The below Terms and Conditions (T&amp;C) are applicable along with the Privacy Policy and Use of service to all of the visitors to this web site.
+            <br/>
+<ul>
+<li>
+              Visitors are bound by the terms and conditions mentioned below to use this website.
+             </li>
+<li>
+              You are advised to read the Terms carefully before accessing or registering to the Site. By accessing the Site you are agreeing to the Terms, whether or not you are a registered user.
+             </li>
+<li>
+              You are advised to regularly check for any amendments or updates to the terms and conditions from time to time. Sherie’s fibronet may add or amend or update these Terms of Use, from time to time entirely at its own discretion. You are responsible for checking these Terms of Use periodically to remain in compliance with these terms. Your use of a Site after any amendment to the Terms of Use shall constitute your acceptance of these terms and you also agree to be bound by any such changes/revisions.
+             </li>
+<li>
+              Any clause of terms and conditions if deemed invalid, void or for any reason unenforceable, shall be deemed severable and shall not affect the validity and enforceability of the remaining clauses of the terms and conditions
+             </li>
+</ul>
+<br/>
+<strong>
+             Definition :
+            </strong>
+<br/>
+<ul>
+<li>
+              "Agreement" refers the Terms and Conditions (T&amp;C) contained herein along with the Privacy Policy and Terms of Use including other T&amp;C at other portals of Sherie’s fibronet. It will also include references to this Agreement as and when amended, notated, supplemented, varied or replaced.
+             </li>
+<li>
+              "Portal/Site" refers the Sherie’s fibronet platform owned and operated by Sherie’s fibronet.
+             </li>
+<li>
+              "User/You" refers and includes any Customer / Users / You (the person or any legal entity) who uses the services offered by Sherie’s fibronet through its Portal.
+              <ul>
+<li>
+                Registration : Please remember the registration of the User on our website is mandatory. The User agrees and undertakes at all times to be responsible for maintaining the confidentiality of the password and user id, and shall be fully responsible for all activities that occur by use of such password or user id. Further, the User agrees not to use any other party's under ID and Password for any purpose whatsoever regardless of any authorization from such party.
+               </li>
+<li>
+                The info displayed, transmitted or carried by the web site including but not limited to data, images, graphics, logos, icons, directories, guides, news articles, opinion, reviews, text, photographs, images, illustrations, profiles, software, audio clips, video clips, trademarks, service marks and the like, e-mail, messages posted by the user in a chat room, discussion forum or otherwise (collectively "Information") are protected by copyright, trademarks and other intellectual property laws. The Information is owned by the Company, its affiliates or third party licensors. You agree to abide by all copyright notices and restrictions that are applicable to any Information and not to alter the Information in any way. You further agree not to transfer the Information to any other person and you agree that you shall do all that may be necessary to prevent any unauthorized copying of the Information.
+               </li>
+<li>
+                The user of this website agrees to use the services provided by Sherie’s fibronet, its affiliates, consultants and contracted companies, for lawful purposes only.
+               </li>
+<li>
+                Need to provide authentic and true information of the website user. Sherie’s fibronet reserves the right to confirm and validate the information and other details provided by the User at any point of time. If upon confirmation such User details are found not to be true (wholly or partly), Sherie’s fibronet has the right in its sole discretion to reject the registration and debar the User from using its services without prior intimation whatsoever.
+               </li>
+<li>
+                Sherie’s fibronet will not be responsible for any, direct or indirect, loss or damage arising out of the user's failure to comply with this requirement.
+               </li>
+<li>
+                The user agrees and undertakes to immediately notify Sherie’s fibronet of any unauthorized use of the user's password or user ID and to ensure that the user logs off at the end of each session at the website.
+               </li>
+</ul>
+</li>
+</ul>
+<br/>
+<strong>
+             Refund and Cancellation Policy:
+            </strong>
+<br/>
+            All sales of Recharge / subscription/ Installation charges all are final and there will be no refund or exchange permitted. Please be advised that You are responsible for the Internet cable subscription you purchase Recharge for and all charges that result from those purchases. Sherie Plexus ISP Pvt Ltd is not responsible for any purchase of Recharge for an incorrect mobile number / user id.
+            <br/>
+</div>
+</div>
+<div style="clear: both">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="viamagus-component viamagus_footer" data-bkg-image="" data-component-name="Footer" id="viamagus_Footer_1191">
+<div class="viamagus-component-bg-colour" style="background: rgba(7,25,78,1)">
+<div class="viamagus-component-content">
+<div class="row-fluid viamagus-paragraph">
+<div class="span6">
+<div style="text-align: center">
+<span style="color: #FFFFFF">
+           © 2026. Sherie's fibronet. All Rights Reserved.
+          </span>
+</div>
+</div>
+<div class="span6">
+<div style="text-align: center">
+<a data-active-tab="#pageTab" href="terms-and-conditions.html#">
+<span style="color: #FFFFFF">
+            Terms &amp; Conditions
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="disclaimer.html#">
+<span style="color: #FFFFFF">
+            Disclaimer
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="privacy-policy.html#">
+<span style="color: #FFFFFF">
+            Privacy Policy
+           </span>
+</a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div id="logo">
+<a class="external" href="https://propage.in" id="goUp" style="float: right" target="_blank" title="propage.in">powered by propage.in</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script src="js/bundle-17.js">
+</script>
+<script src="js/bundle-19.js">
+</script>
+<script src="js/bundle-21.js">
+</script>
+<script src="js/bundle-5.js">
+</script>
+<script src="js/bundle-14.js">
+</script>
+<script src="js/bundle-22.js">
+</script>
+<script src="js/bundle-8.js">
+</script>
+<script src="js/bundle-29.js">
+</script>
+<script src="js/bundle-28.js">
+</script>
+<script src="js/bundle-11.js">
+</script>
+<script src="js/bundle-12.js">
+</script>
+<script src="js/bundle-9.js">
+</script>
+<script src="js/bundle-25.js">
+</script>
+<script src="js/bundle-13.js">
+</script>
+<script src="js/bundle-24.js" type="text/javascript">
+</script>
+<script src="js/bundle-10.js" type="text/javascript">
+</script>
+<script src="js/bundle-2.js" type="text/javascript">
+</script>
+<script src="js/bundle-18.js" type="text/javascript">
+</script>
+<script src="js/bundle-3.js" type="text/javascript">
+</script>
+<script src="js/bundle-4.js" type="text/javascript">
+</script>
+<script>
+   $(function() {	Viamagus_Website_Loader._init();	Viamagus_Form_Loader._init();});
+  </script>
+</body>
+</html>

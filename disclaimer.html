@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="480" name="MobileOptimized"/>
+<title>
+   Sheries Fibronet | Disclaimer
+  </title>
+<meta content="Sheries Fibronet | Disclaimer" name="description"/>
+<meta content="Sheries Fibronet | Disclaimer" name="keywords"/>
+<meta content="Sheries Fibronet | Disclaimer" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="Sheries Fibronet | Disclaimer" property="og:description"/>
+<meta content="www.fibronet.co.in" property="og:site_name"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="og:image"/>
+<meta content="Sheries Fibronet | Disclaimer" property="twitter:title"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Sheries Fibronet | Disclaimer" property="twitter:description"/>
+<meta content="https://e8e35ad9ef11e093d3be-f10e91cb1bc80911fd9068f2fdbb50c9.ssl.cf1.rackcdn.com/1493893825570fibronetlogo.png" property="twitter:image"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="css/main-3.css" rel="stylesheet"/>
+<link href="css/main-6.css" rel="stylesheet"/>
+<script type="text/javascript">
+   (function(funcName, baseObj) {
+    // The public function name defaults to window.docReady
+    // but you can pass in your own object and own function name and those will be used
+    // if you want to put them in a different namespace
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    // call this when the document is ready
+    // this function protects itself against being called more than once
+    function ready() {
+        if (!readyFired) {
+            // this must be set to true before we start calling callbacks
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                // if a callback here happens to add new ready handlers,
+                // the docReady() function will see that it already fired
+                // and will schedule the callback to run right after
+                // this event loop finishes so all handlers will still execute
+                // in order and no new ones will be added to the readyList
+                // while we are processing the list
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            // allow any closures held by these functions to free
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    // This is the one public interface
+    // docReady(fn, context);
+    // the context argument is optional - if present, it will be passed
+    // as an argument to the callback
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        // if ready has already fired, then just schedule the callback
+        // to fire asynchronously, but right away
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            // add the function and context to the list
+            readyList.push({fn: callback, ctx: context});
+        }
+        // if document already ready to go, schedule the ready function to run
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            // otherwise if we don't have event handlers installed, install them
+            if (document.addEventListener) {
+                // first choice is DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", ready, false);
+                // backup is window load event
+                window.addEventListener("load", ready, false);
+            } else {
+                // must be IE
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+docReady(function() {
+    // code here
+    if (window.location.href.indexOf("console") == -1) {
+
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/presto_connections.js';
+            document.getElementsByTagName('body')[0].appendChild(script);
+
+            script.onload = function() {
+                console.log( 'loaded presto shopping' );
+                var initOptions = {
+                  "controller": "https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/connections_controller.html",
+                  "configParams": {
+                    "merchant_id": "5cca8fc31e4cd66c8b00209f",
+                    "app_id": "59d4cc24a4d34100046255b6",
+                    "merchant_name": "Fibronet",
+                    "merchant_logo": ""
+                  },
+                  "shoppingWindowOptions": {
+                    "environment": "production",
+                    "merchantType": "connections",
+                    "currency": "rupee"
+                  }
+                }
+                PrestoEmbedManager.init(initOptions);
+            }
+        }
+});
+  </script>
+<script async="" src="js/bundle-27.js">
+</script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160601521-43');
+  </script>
+<link href="css/main-5.css" rel="stylesheet" type="text/css"/>
+<link href="css/internal-styles.css" rel="stylesheet"/><style>/* Default fonts: Playfair Display for headings, Quicksand for body (change_default_fonts.py) */
+body, html, .viamagusPageSettings, .viamagusPageSettings .viamagus-container { font-family: 'Quicksand', sans-serif; }
+h1, h2, h3, h4, h5, h6,
+.viamagus-heading1, .viamagus-heading2, .viamagus-heading3, .viamagus-section-heading { font-family: 'Playfair Display', serif; }</style>
+<link href="imgs/image-5.webp" rel="shortcut icon" type="image/x-icon"/>
+<link href="imgs/image-5.webp" rel="apple-touch-icon" type="image/x-icon"/>
+<script src="js/bundle-7.js" type="text/javascript">
+</script>
+<script src="js/bundle-23.js" type="text/javascript">
+</script>
+<script src="js/bundle-26.js" type="text/javascript">
+</script>
+<script src="js/bundle-15.js" type="text/javascript">
+</script>
+<script src="js/bundle-1.js" type="text/javascript">
+</script>
+<script src="js/bundle-16.js" type="text/javascript">
+</script>
+<script src="js/bundle-6.js" type="text/javascript">
+</script>
+<meta content="http://www.fibronet.in/disclaimer.html" property="og:url"/>
+</head>
+<body>
+<script>
+   function loadViaBkgImage(){ if($('.backstretch').length){ $.backstretch('destroy',false);} }
+  </script>
+<div class="viamagusPageSettings">
+<div class="viamagus-container">
+<link href="css/main-1.css" rel="stylesheet" type="text/css"/>
+<div class="viamagus-component viamagus_header" data-component-name="Menu" data-sticky-header="true" id="viamagus_Menu_2928">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content navbar navbar-inverse" style="padding-top: 0px; padding-bottom: 0px; padding-left: 100px; padding-right: 100px; font-family: Lato; font-weight: bold !important">
+<div class="navbar-inner" data-bkg-color="" data-transparent-menu-cover-mode="false">
+<div class="viamagus-menu-top-row">
+</div>
+<div class="container menu-center">
+<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+</button>
+<div class="viamagus-business-logo" itemscope="" itemtype="http://schema.org/Organization">
+<a class="brand" href="/" itemprop="url">
+<img alt="logo" itemprop="logo" src="imgs/logo-fibronet.webp" style="width: 200px"/>
+</a>
+</div>
+<div class="collapse-center">
+<div class="nav-collapse collapse">
+<ul class="nav" id="menu-nav">
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="/" style="font-size: 15px">
+              HOME
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="about-us.html" style="font-size: 15px">
+              ABOUT US
+             </a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href="#" style="font-size: 15px">
+              PLANS
+              <b class="caret">
+</b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a class="menulink" href="residential.html" style="font-size: 15px">
+                RESIDENTIAL
+               </a>
+</li>
+<li>
+<a class="menulink" href="business.html" style="font-size: 15px">
+                BUSINESS
+               </a>
+</li>
+</ul>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="contact-us.html" style="font-size: 15px">
+              CONTACT US
+             </a>
+</li>
+<li>
+<a class="menulink" data-target=".nav-collapse" data-toggle="collapse" href="https://login.fibronet.in/customer_portal" style="font-size: 15px" target="_blank">
+              LOGIN
+             </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-section-header" data-bkg-image="" data-component-name="Section Title" id="viamagus_Section_Title_7373">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 20px; padding-bottom: 15px">
+<div class="row-fluid">
+<div class="span12">
+<div class="title-page">
+<h2 class="viamagus-section-heading title">
+<div style="text-align: center">
+            DISCLAIMER
+           </div>
+</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-richtext" data-bkg-image="" data-component-name="Text" id="viamagus_Text_8217">
+<div class="viamagus-component-bg-colour" style="background-color: rgba(230,230,230,1)">
+<div class="viamagus-component-content" style="padding-top: 10px; padding-bottom: 10px">
+<div class="row-fluid viamagus-paragraph" id="viamagus_Text_8217-content">
+<div style="text-align: center">
+<a data-active-tab="#pageTab" href="home.html#">
+<span style="color: #696969">
+           Home
+          </span>
+</a>
+<span style="color: #696969">
+          /  Disclaimer
+         </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="viamagus-component viamagus-image-text container-fluid" data-bkg-image="" data-component-name="Image Text" id="viamagus_Image_Text_3574">
+<div class="viamagus-component-bg-colour">
+<div class="viamagus-component-content" style="padding-top: 50px; padding-bottom: 50px">
+<div class="row-fluid">
+<div class="featurette">
+<div>
+<div class="content-container">
+<div class="lead viamagus-paragraph">
+            By being allowed access to this Site (as defined below), you enter into the Site user agreement on the terms and conditions ("Terms") set out The Company (as defined under) reserves the right to add to or change/modify the Terms. The Company reserves the right, at its sole discretion, to make changes to any section of the Site. Due to its policy of updating and improving the Site, the Company may wish to change these Terms including those relating to the use of the Information (as defined under). You should read these Terms from time to time because such revised Terms shall be binding on you. Certain provisions of these Terms may be superseded by expressly designated legal notices or terms located on particular pages in this Site. If you access or register with the Site after the Company has published or notified you of those changes, you agree to be below. bound by those changes.
+            <br/>
+<br/>
+            Set out below are the Terms governing the access, use of and downloads from this website, www.fibronet.co.in and includes any file or groups of files hosted on a computer and accessible by third parties through the internet protocol used to transmit files through the internet and any collection of one or more inter-related web pages or documents which can be viewed in entirety without leaving the applicable distinct URL when viewed by a browser program through a common URL. It is expressly understood that the term "URL" means the electronic address of any document located on the web comprising of a code or series of letters, numbers and/or symbols, which corresponds to a specific location on the web. You are advised to read the Terms carefully before accessing or registering to the Site. By accessing the Site you are agreeing to the Terms, whether or not you are a registered user. Please contact avinashds@yahoo.com if you require any clarifications.
+            <br/>
+<br/>
+            The materials on the Site are provided by Sherie’s fibronet Private Limited, an Indian company, having its registered office at #13, 9th Cross, New Bank Colony, Chunchatta Main Road, Konanakunte, Bangalore - 560062.
+            <br/>
+<br/>
+            As a service to its users and subscribers, and may be used for informational purposes only. If you do not agree to the Terms, please do not access/ use the Site or download any materials from it. The access to this Site is at the sole discretion of the Company. Certain parts of this Site are accessible without the need for registration. You will be prompted to register when you attempt to access part of the Site which requires prior registration.
+            <br/>
+<br/>
+<strong>
+             Intellectual Property
+            </strong>
+<br/>
+<br/>
+            The Sherie’s fibronet trademark and logo may not be used without the prior written consent of Sherie’s fibronet and shall not be used in any manner that is likely to cause confusion or in any manner that disparages or discredits the Company, the logo or the Site.
+            <br/>
+<br/>
+            All the information displayed, transmitted or carried by the Site and its related websites including but not limited to data, images, graphics, logos, icons, directories, guides, news articles, opinion, reviews, text, photographs, images, illustrations, profiles, softwares, audio clips, video clips, trademarks, service marks and the like, e-mail, messages posted by the user in a chat room, discussion forum or otherwise (collectively "Information") are protected by copyright, trademarks and other intellectual property laws. The Information is owned by the Company, its affiliates or third party licensors. You agree to abide by all copyright notices and restrictions that are applicable to any Information and not to alter the Information in any way. You further agree not to transfer the Information to any other person and you agree that you shall do all that may be necessary to prevent any unauthorized copying of the Information.
+            <br/>
+<br/>
+            Except as expressly provided herein, the Company, its affiliates, subsidiaries and its suppliers do not grant any express or implied right to you under any intellectual property laws. Any other rights may be expressly granted to you by the Company in writing. All trademarks, brands and names used on this Site, including trademarks, brands and names of affiliates, co-subsidiary, co-branders, partners, advertisers, etc., are the property of their respective owners and the Company claims no right, title or interest to such trademarks, brand and names used on this Site. Use of Information www.fibronet.co.in
+           </div>
+</div>
+<div style="clear: both">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="viamagus-component viamagus_footer" data-bkg-image="" data-component-name="Footer" id="viamagus_Footer_1191">
+<div class="viamagus-component-bg-colour" style="background: rgba(7,25,78,1)">
+<div class="viamagus-component-content">
+<div class="row-fluid viamagus-paragraph">
+<div class="span6">
+<div style="text-align: center">
+<span style="color: #FFFFFF">
+           © 2026. Sherie's fibronet. All Rights Reserved.
+          </span>
+</div>
+</div>
+<div class="span6">
+<div style="text-align: center">
+<a data-active-tab="#pageTab" href="terms-and-conditions.html#">
+<span style="color: #FFFFFF">
+            Terms &amp; Conditions
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="disclaimer.html#">
+<span style="color: #FFFFFF">
+            Disclaimer
+           </span>
+</a>
+<span style="color: #FFFFFF">
+           |
+          </span>
+<a data-active-tab="#pageTab" href="privacy-policy.html#">
+<span style="color: #FFFFFF">
+            Privacy Policy
+           </span>
+</a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div id="logo">
+<a class="external" href="https://propage.in" id="goUp" style="float: right" target="_blank" title="propage.in">powered by propage.in</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script src="js/bundle-17.js">
+</script>
+<script src="js/bundle-19.js">
+</script>
+<script src="js/bundle-21.js">
+</script>
+<script src="js/bundle-5.js">
+</script>
+<script src="js/bundle-14.js">
+</script>
+<script src="js/bundle-22.js">
+</script>
+<script src="js/bundle-8.js">
+</script>
+<script src="js/bundle-29.js">
+</script>
+<script src="js/bundle-28.js">
+</script>
+<script src="js/bundle-11.js">
+</script>
+<script src="js/bundle-12.js">
+</script>
+<script src="js/bundle-9.js">
+</script>
+<script src="js/bundle-25.js">
+</script>
+<script src="js/bundle-13.js">
+</script>
+<script src="js/bundle-24.js" type="text/javascript">
+</script>
+<script src="js/bundle-10.js" type="text/javascript">
+</script>
+<script src="js/bundle-2.js" type="text/javascript">
+</script>
+<script src="js/bundle-18.js" type="text/javascript">
+</script>
+<script src="js/bundle-3.js" type="text/javascript">
+</script>
+<script src="js/bundle-4.js" type="text/javascript">
+</script>
+<script>
+   $(function() {	Viamagus_Website_Loader._init();	Viamagus_Form_Loader._init();});
+  </script>
+</body>
+</html>
