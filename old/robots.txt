@@ -1,5 +1,0 @@
-<html>
- <body>
-  User-agent: * Sitemap: http://www.fibronet.in
- </body>
-</html>

@@ -27,7 +27,7 @@ collect_html_files() {
       if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
         git diff --name-only --diff-filter=ACM HEAD~1 HEAD | grep -E '\.html?$' || true
       else
-        find . -name '*.html' ! -path './.git/*' ! -path './old/*' ! -path './new/*' | sort
+        find . -name '*.html' ! -path './.git/*' | sort
       fi
       ;;
     --pr)
@@ -39,7 +39,7 @@ collect_html_files() {
       fi
       ;;
     *)
-      find . -name '*.html' ! -path './.git/*' ! -path './old/*' ! -path './new/*' | sort
+      find . -name '*.html' ! -path './.git/*' | sort
       ;;
   esac
 }

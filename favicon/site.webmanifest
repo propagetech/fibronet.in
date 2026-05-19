@@ -1,6 +1,6 @@
 {
-  "name": "Sherie's Fibronet",
-  "short_name": "Fibronet",
+  "name": "MyWebSite",
+  "short_name": "MySite",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#07194e",
-  "background_color": "#050a14",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
