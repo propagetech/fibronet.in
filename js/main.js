@@ -137,14 +137,13 @@ function initPrestoEmbed() {
 
 function getPlanNameFromCard(card) {
   const tag = card?.querySelector(".plan__tag-num")?.textContent?.trim() || "";
-  const speed =
-    card?.querySelector(".plan__speed-num")?.textContent?.trim() || "";
+  const summary = card?.querySelector(".plan__summary")?.textContent?.trim() || "";
   let name = "Fibronet";
   if (tag) {
     name += " " + tag;
   }
-  if (speed) {
-    name += " (" + speed + " Mbps)";
+  if (summary) {
+    name += " (" + summary + ")";
   }
   return name;
 }
