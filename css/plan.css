@@ -3,25 +3,32 @@
    Adjust these to rebrand (e.g. swap accent to Fibronet red)
    ========================================================= */
 :root {
+  --plan-navy: #091b4f;
+  --plan-red: #ed1c02;
+  --plan-white: #ffffff;
+  --plan-navy-rgb: 9, 27, 79;
+  --plan-red-rgb: 237, 28, 2;
+  --plan-green-bright-rgb: 16, 185, 129;
+
   /* Surfaces */
-  --plan-bg-page: #fafafa;
-  --plan-bg-card: #ffffff;
+  --plan-bg-page: var(--plan-white);
+  --plan-bg-card: var(--plan-white);
 
   /* Text */
-  --plan-text: #111827;
-  --plan-text-muted: #6b7280;
-  --plan-text-faint: #9ca3af;
+  --plan-text: var(--plan-navy);
+  --plan-text-muted: rgba(var(--plan-navy-rgb), 0.65);
+  --plan-text-faint: rgba(var(--plan-navy-rgb), 0.45);
 
   /* Borders */
-  --plan-border: #e5e7eb;
-  --plan-border-strong: #d1d5db;
+  --plan-border: rgba(var(--plan-navy-rgb), 0.12);
+  --plan-border-strong: rgba(var(--plan-navy-rgb), 0.22);
 
   /* Accent (used for featured card border, plan number) */
-  --plan-accent: #ed1c03;
-  --plan-accent-soft: #fff0ee;
-  --plan-accent-text: #b81502;
+  --plan-accent: var(--plan-red);
+  --plan-accent-soft: rgba(var(--plan-red-rgb), 0.1);
+  --plan-accent-text: var(--plan-red);
 
-  /* Savings pill */
+  /* Savings pill (green — distinct from brand red accent) */
   --plan-save-bg: #ecfdf5;
   --plan-save-text: #065f46;
 
@@ -141,7 +148,7 @@
   z-index: 1;
   transform: translate(-50%, -50%);
   background: var(--plan-accent);
-  color: #fff;
+  color: var(--plan-white);
   font-size: 0.6875rem;
   padding: 0.3rem 0.75rem;
   border-radius: var(--plan-radius-md);
@@ -338,11 +345,14 @@
 }
 
 /* =========================================================
-   Homepage embed (dark site — aligned with .container)
+   Homepage embed — white band on navy page
    ========================================================= */
 .section--plans-band {
-  padding: clamp(2.5rem, 6vw, 4rem) 0;
+  padding: clamp(3rem, 7vw, 4.5rem) 0;
   scroll-margin-top: calc(var(--header-h, 72px) + 1rem);
+  background: var(--color-white, var(--plan-white));
+  color: var(--color-navy, var(--plan-navy));
+  box-shadow: 0 12px 48px rgba(var(--plan-navy-rgb), 0.1);
 }
 
 .section--plans-band + .section--plans-band {
@@ -351,36 +361,40 @@
 
 .plans--embedded {
   --plan-bg-page: transparent;
-  --plan-bg-card: rgba(255, 255, 255, 0.05);
-  --plan-text: #f0f4fc;
-  --plan-text-muted: #9aa8c4;
-  --plan-text-faint: #7b8aa8;
-  --plan-border: rgba(255, 255, 255, 0.12);
-  --plan-border-strong: rgba(255, 255, 255, 0.22);
-  --plan-accent: #ed1c03;
-  --plan-accent-soft: rgba(237, 28, 3, 0.18);
-  --plan-accent-text: #ff8a7a;
-  --plan-save-bg: rgba(16, 185, 129, 0.16);
-  --plan-save-text: #6ee7b7;
+  --plan-bg-card: var(--plan-white);
+  --plan-text: var(--plan-navy);
+  --plan-text-muted: rgba(var(--plan-navy-rgb), 0.65);
+  --plan-text-faint: rgba(var(--plan-navy-rgb), 0.45);
+  --plan-border: rgba(var(--plan-navy-rgb), 0.12);
+  --plan-border-strong: rgba(var(--plan-navy-rgb), 0.22);
+  --plan-accent: var(--plan-red);
+  --plan-accent-soft: rgba(var(--plan-red-rgb), 0.1);
+  --plan-accent-text: var(--plan-red);
+  --plan-save-bg: #ecfdf5;
+  --plan-save-text: #065f46;
   --plan-radius-lg: 16px;
 
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: clamp(1.75rem, 4vw, 2.5rem);
+  padding: 0;
   font-family: var(--font-body, "Quicksand", system-ui, sans-serif);
   color: var(--plan-text);
-  background: var(--bg-elevated, #0c1528);
-  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
-  border-radius: var(--radius, 16px);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .plans--embedded .plans__title {
   font-family: var(--font-display, "Playfair Display", Georgia, serif);
   font-weight: 700;
-  color: var(--plan-text);
+  color: var(--plan-navy);
   letter-spacing: normal;
+}
+
+.plans--embedded .plans__subtitle {
+  color: var(--plan-text-muted);
 }
 
 .plans--embedded .plans__head {
@@ -394,15 +408,22 @@
   padding-top: 0.875rem;
 }
 
+.plans--embedded .plan {
+  box-shadow: 0 4px 20px rgba(var(--plan-navy-rgb), 0.08);
+}
+
 .plans--embedded .plan:hover {
-  border-color: rgba(237, 28, 3, 0.45);
-  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(var(--plan-red-rgb), 0.45);
+  background: var(--plan-white);
+  box-shadow: 0 8px 28px rgba(var(--plan-navy-rgb), 0.12);
 }
 
 .plans--embedded .plan--featured {
   border-color: var(--plan-accent);
-  background: rgba(237, 28, 3, 0.08);
-  box-shadow: 0 0 0 1px rgba(237, 28, 3, 0.2);
+  background: rgba(var(--plan-red-rgb), 0.04);
+  box-shadow:
+    0 0 0 1px rgba(var(--plan-red-rgb), 0.15),
+    0 8px 28px rgba(var(--plan-navy-rgb), 0.1);
 }
 
 .plans--embedded .plan__badge {
@@ -411,8 +432,10 @@
   line-height: 1.25;
 }
 
-.plans--embedded .plan {
+.plans--embedded .plans__grid > .plan {
   padding: 1.375rem 1.25rem 1.25rem;
+  min-width: 0;
+  overflow: visible;
 }
 
 .plans--embedded .plan__tag {
@@ -434,33 +457,29 @@
 }
 
 .plans--embedded .plan__cta {
-  background: transparent;
-  color: var(--plan-text);
+  background: var(--plan-white);
+  color: var(--plan-navy);
   border-color: var(--plan-border-strong);
 }
 
 .plans--embedded .plan__cta:hover {
-  background: var(--plan-text);
-  color: var(--bg, #050a14);
-  border-color: var(--plan-text);
+  background: var(--plan-navy);
+  color: var(--plan-white);
+  border-color: var(--plan-navy);
 }
 
 .plans--embedded .plan__cta--primary {
   background: var(--plan-accent);
   border-color: var(--plan-accent);
-  color: #fff;
+  color: var(--plan-white);
 }
 
 .plans--embedded .plan__cta--primary:hover {
-  background: #ff3d28;
-  border-color: #ff3d28;
-  color: #fff;
+  background: var(--plan-accent);
+  border-color: var(--plan-accent);
+  color: var(--plan-white);
+  filter: brightness(1.08);
   opacity: 1;
-}
-
-.plans--embedded .plans__grid > .plan {
-  min-width: 0;
-  overflow: visible;
 }
 
 .plans--embedded .plan__pricing {
@@ -621,7 +640,7 @@
 }
 
 @media (max-width: 480px) {
-  .plans--embedded {
-    padding: 1.25rem 1rem;
+  .section--plans-band {
+    padding: clamp(2rem, 6vw, 3rem) 0;
   }
 }
