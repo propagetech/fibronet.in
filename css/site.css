@@ -71,8 +71,16 @@ body {
   color: var(--text);
   background: var(--bg);
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(var(--red-rgb), 0.12), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(255, 255, 255, 0.06), transparent);
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(var(--red-rgb), 0.12),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 50%,
+      rgba(255, 255, 255, 0.06),
+      transparent
+    );
   min-height: 100vh;
 }
 
@@ -168,7 +176,9 @@ textarea:focus-visible {
   margin-left: -11px;
   background: currentColor;
   border-radius: 1px;
-  transition: transform 0.25s ease, opacity 0.2s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.2s ease;
 }
 
 .nav-toggle span:nth-child(1) {
@@ -366,7 +376,9 @@ textarea:focus-visible {
     transform: translateY(-120%);
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.25s ease, opacity 0.25s ease;
+    transition:
+      transform 0.25s ease,
+      opacity 0.25s ease;
   }
 
   .site-nav.is-open {
@@ -557,7 +569,11 @@ h2 {
   inset: 0;
   z-index: 0;
   background:
-    linear-gradient(180deg, rgba(var(--navy-rgb), 0.55) 0%, rgba(var(--navy-rgb), 0.88) 100%),
+    linear-gradient(
+      180deg,
+      rgba(var(--navy-rgb), 0.55) 0%,
+      rgba(var(--navy-rgb), 0.88) 100%
+    ),
     linear-gradient(
       105deg,
       rgba(var(--navy-rgb), 0.96) 0%,
@@ -635,9 +651,22 @@ h2 {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(105deg, rgba(var(--navy-rgb), 0.88) 0%, rgba(var(--navy-rgb), 0.45) 48%, rgba(var(--navy-rgb), 0.25) 100%),
-    radial-gradient(circle at 20% 80%, rgba(var(--red-rgb), 0.18), transparent 45%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1), transparent 40%);
+    linear-gradient(
+      105deg,
+      rgba(var(--navy-rgb), 0.88) 0%,
+      rgba(var(--navy-rgb), 0.45) 48%,
+      rgba(var(--navy-rgb), 0.25) 100%
+    ),
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(var(--red-rgb), 0.18),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.1),
+      transparent 40%
+    );
 }
 
 .hero-carousel__slide--1 {
@@ -716,7 +745,9 @@ h2 {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.25);
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .hero-carousel__dot.is-active {
@@ -839,7 +870,10 @@ h2 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
-  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .card:hover {
@@ -874,7 +908,9 @@ h2 {
   cursor: pointer;
   background: var(--accent);
   color: var(--bg);
-  transition: filter 0.2s, transform 0.2s;
+  transition:
+    filter 0.2s,
+    transform 0.2s;
 }
 
 .btn:hover {
@@ -1353,7 +1389,11 @@ h2 {
 /* Support strip */
 .support-strip {
   border-block: 1px solid var(--border);
-  background: linear-gradient(90deg, rgba(var(--red-rgb), 0.12), rgba(255, 255, 255, 0.08));
+  background: linear-gradient(
+    90deg,
+    rgba(var(--red-rgb), 0.12),
+    rgba(255, 255, 255, 0.08)
+  );
 }
 
 .support-strip__inner {
@@ -1704,7 +1744,6 @@ iframe[src*="/embed/presto-pay"] {
 
 /* Footer */
 .site-footer {
-  margin-top: 4rem;
   padding: 0;
   background: var(--navy);
   border-top: 1px solid var(--border);
