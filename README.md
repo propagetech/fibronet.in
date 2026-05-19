@@ -2,7 +2,7 @@
 
 Static ISP marketing site (vanilla HTML, CSS, ES modules).
 
-- **Site:** repo root — `index.html`, `css/site.css`, `css/plan.css`, `js/main.js`, `js/pay-online.js`, `imgs/`
+- **Site:** repo root — `index.html`, `about/`, `pay-online/`, legal pages, `css/site.css`, `css/plan.css`, `js/main.js`, `js/pay-online.js`, `imgs/`, `embed/presto-pay/`
 - **Full tech spec:** [docs/static-site-standards.md](docs/static-site-standards.md)
 - **Cursor AI rules:** `.cursor/rules/` (summaries + enforcement; always read the doc for the complete checklist)
 
