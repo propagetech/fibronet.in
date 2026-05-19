@@ -117,7 +117,8 @@ function initPrestoEmbed() {
       return;
     }
     PrestoEmbedManager.init({
-      controller: "/embed/presto-pay/",
+      controller:
+        "https://s3-ap-southeast-1.amazonaws.com/staging-websites/presto-shopping/connections_controller.html",
       configParams: {
         merchant_id: "5cca8fc31e4cd66c8b00209f",
         app_id: "59d4cc24a4d34100046255b6",
@@ -174,7 +175,7 @@ function initPlanChooseButtons() {
 }
 
 initHeroCarousel();
-initPrestoEmbed();
+// initPrestoEmbed();
 initPlanChooseButtons();
 
 const nav = document.querySelector(".site-nav");
