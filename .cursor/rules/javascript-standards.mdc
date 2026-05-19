@@ -1,0 +1,39 @@
+---
+description: ES modules, observers, APIs, and legacy bundle policy
+globs: "**/*.js"
+alwaysApply: false
+---
+
+# JavaScript standards
+
+Full checklist: `docs/static-site-standards.md` (Vanilla JS, Browser APIs, theming, misc).
+
+## Modules & loading
+
+- ES modules only for new code; `export`/`import`
+- Load with `type="module"` + `defer` (or `async` when order-independent)
+- Do not extend `js/bundle-*.js` — add `js/feature-name.js` instead
+
+## Patterns
+
+- Event delegation on stable parents; `AbortController` to remove listeners
+- Observers: IntersectionObserver (lazy/scroll), ResizeObserver, MutationObserver when needed
+- Fetch for JSON/partials; `structuredClone`, optional chaining, nullish coalescing
+- `matchMedia` for responsive JS; `requestAnimationFrame` / `requestIdleCallback` for work scheduling
+
+## Web Components (when used)
+
+- Custom Elements + Shadow DOM; clone from `<template>`
+- File-per-component under `js/components/` (or similar)
+
+## Theming / storage
+
+- Theme toggle: CSS variables + `localStorage` key (e.g. `theme`) synced with `prefers-color-scheme`
+
+## APIs (prefer native over libraries)
+
+- History (`pushState` / `popstate`), Clipboard, Share (`navigator.share`), View Transitions, Web Animations
+
+## Misc features
+
+- Reading time calc, smooth anchor scroll, back-to-top — small dedicated modules

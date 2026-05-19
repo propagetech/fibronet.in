@@ -1,0 +1,31 @@
+---
+description: SEO, JSON-LD, WCAG 2.2 AA, and ARIA patterns
+globs: "**/*.{html,css}"
+alwaysApply: false
+---
+
+# SEO & accessibility
+
+Full checklist: `docs/static-site-standards.md` (SEO, Accessibility).
+
+## SEO
+
+- Unique title + meta description per page; canonical URL
+- Valid Open Graph + Twitter Card tags; absolute OG image URL (1200×630)
+- JSON-LD appropriate types; keep `sitemap.xml` / `robots.txt` in sync when adding routes
+- Clean URLs: folder + `index.html` (e.g. `/about/`); hreflang if multilingual
+
+## Accessibility (WCAG 2.2 AA target)
+
+- Semantic HTML first; ARIA only when semantics are insufficient
+- Landmarks + skip link; logical heading order
+- `aria-label` / `aria-labelledby` / `aria-describedby` on controls; `aria-expanded`, `aria-live`, `aria-hidden` as needed
+- All images: meaningful `alt` or `alt=""` if decorative
+- Keyboard: full operability; sensible `tabindex` (avoid positive tabindex)
+- Contrast AA; `:focus-visible` styles in CSS
+- `prefers-reduced-motion` honored in CSS/JS
+- Icon-only buttons: `aria-label`; decorative icons: `aria-hidden="true"`
+
+## Verification (human / CI)
+
+- axe, WAVE, Rich Results Test, Schema Markup Validator after major changes

@@ -1,0 +1,38 @@
+---
+description: HTML5 semantics, head meta, and document structure
+globs: "**/*.html"
+alwaysApply: false
+---
+
+# HTML standards
+
+Full checklist: `docs/static-site-standards.md` (HTML5, SEO meta, link safety).
+
+## Document shell
+
+- `<!DOCTYPE html>`, `<html lang="en">` (adjust locale if needed)
+- `<meta charset="utf-8">`, viewport meta, UTF-8 throughout
+- One logical `<h1>` per page; heading levels never skip (h1→h2→h3…)
+
+## Semantics & landmarks
+
+- Use `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`
+- Prefer `<dialog>`, `<details>`/`<summary>`, `<figure>`/`<figcaption>`, `<time>`, `<mark>`, `<abbr>` where appropriate
+- `<picture>` + `<source>` for WebP/AVIF; `width`/`height` on images (CLS)
+- `<template>` / `<slot>` for Web Components; microdata/`itemprop` when useful
+
+## Head (every page)
+
+- Unique `<title>` and `<meta name="description">`
+- `<link rel="canonical" href="…">`
+- Open Graph + Twitter Cards (valid `property`/`name`; OG image 1200×630)
+- JSON-LD (`WebSite`, `Organization`, `BreadcrumbList`, `Article`, `Person` as relevant)
+
+## UX / a11y hooks
+
+- Skip link as first focusable element in `<body>`
+- External `target="_blank"`: `rel="noopener noreferrer"`; `nofollow`/`rel="me"` when appropriate
+
+## Scripts
+
+- New scripts: `<script type="module" defer src="…">` — not inline polyfills unless critical

@@ -1,0 +1,35 @@
+---
+description: Core Web Vitals, asset loading, images, and perf budget
+globs: "**/*.{html,css,js}"
+alwaysApply: false
+---
+
+# Performance & media
+
+Full checklist: `docs/static-site-standards.md` (Performance, Images/media).
+
+## Targets
+
+- Lighthouse 100% aspirational; optimize LCP, INP, CLS
+
+## Critical path
+
+- Inline critical CSS for above-the-fold; defer non-critical CSS
+- `<link rel="preload">` for LCP image/font; `preconnect` / `dns-prefetch` for third parties (fonts, CDN)
+- Scripts: `defer` modules; no render-blocking JS; minimal payload
+
+## Images & video
+
+- `<picture>`: AVIF → WebP → fallback; `srcset` + `sizes`
+- `loading="lazy"`, `decoding="async"`, `fetchpriority="high"` on LCP image only
+- Always set `width` and `height` (or aspect-ratio) to prevent CLS
+- Compress assets (Squoosh / ImageOptim); prefer inline SVG for icons/logos
+- Video: `poster`, `preload="none"` unless autoplay required
+
+## Fonts
+
+- Max 2 families; subset weights; preload critical woff2; see fonts-icons rule
+
+## Infra
+
+- HTTP/2+ via Cloudflare (deployment concern — do not block HTML on heavy third parties)

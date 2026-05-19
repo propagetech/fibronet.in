@@ -1,0 +1,32 @@
+name: Quality checks
+
+on:
+  pull_request:
+    branches: [main, dev]
+  push:
+    branches: [main, dev]
+
+permissions:
+  contents: read
+
+jobs:
+  standards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch base branch (PR diff)
+        if: github.event_name == 'pull_request'
+        run: git fetch origin "${{ github.base_ref }}:${{ github.base_ref }}" || true
+
+      - name: Run static site standards checks
+        env:
+          PR_BASE: origin/${{ github.event.pull_request.base.ref || 'main' }}
+        run: |
+          chmod +x scripts/check-standards.sh
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            ./scripts/check-standards.sh --pr
+          else
+            ./scripts/check-standards.sh --changed
+          fi

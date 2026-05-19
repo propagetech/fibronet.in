@@ -1,0 +1,43 @@
+---
+description: Vanilla CSS — layout, modern features, theming, motion
+globs: "**/*.css"
+alwaysApply: false
+---
+
+# CSS standards
+
+Full checklist: `docs/static-site-standards.md` (CSS, theming, fonts).
+
+## Constraints
+
+- No preprocessor. Use custom properties for design tokens (light/dark via `prefers-color-scheme` + optional `[data-theme]`).
+
+## Layout & responsive
+
+- Flexbox / Grid / Subgrid; `gap`; `aspect-ratio`
+- Container queries (`@container`) where components need it
+- Logical properties: `margin-inline`, `padding-block`, etc.
+- Fluid type/spacing: `clamp()`, `min()`, `max()`
+
+## Selectors & interaction
+
+- `:has()`, `:is()`, `:where()`, `:not()`; nesting with `&`
+- `:focus-visible`, `:focus-within` — visible focus rings (a11y)
+- `@layer` for reset → tokens → components → utilities
+
+## Motion & effects
+
+- Respect `@media (prefers-reduced-motion: reduce)` — disable or shorten animations
+- `prefers-contrast`, `prefers-color-scheme`
+- View Transitions API when enhancing navigation
+- `scroll-snap`, `scroll-behavior`, `backdrop-filter`, `content-visibility` as needed
+- Color: `oklch()` / `lch()` / `color-mix()` where supported
+
+## Print
+
+- `@media print` rules for key pages when applicable
+
+## Fonts
+
+- Never `@import` Google Fonts — load via `<link>` in HTML (see fonts-icons rule)
+- `font-display: swap` on `@font-face` if self-hosting

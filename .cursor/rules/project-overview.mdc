@@ -1,0 +1,16 @@
+---
+description: Stack, standards doc, and legacy migration policy for fibronet.in
+alwaysApply: true
+---
+
+# fibronet.in — project overview
+
+**Authoritative spec:** `docs/static-site-standards.md` — include every requirement from that file when building or refactoring. Do not omit sections (HTML, CSS, JS, SEO, a11y, perf, PWA, fonts, structure, validation).
+
+**Stack:** Vanilla HTML5, CSS (no preprocessor), ES modules. No React/Vite/npm unless explicitly requested.
+
+**Legacy:** `js/bundle-*.js` and `css/main-*.css` are legacy exports. Do not add new logic to bundles. New code: `js/*.js` modules + project CSS. Migrate legacy only when the task asks.
+
+**When editing HTML/CSS/JS:** Apply the matching rule in `.cursor/rules/` and cross-check the full standards doc.
+
+**Quality gate:** After substantive page changes, mentally verify against SEO, a11y (WCAG 2.2 AA), and Core Web Vitals targets in the doc.

@@ -1,0 +1,29 @@
+---
+description: Google Fonts and Material Symbols loading and a11y
+globs: "**/*.{html,css}"
+alwaysApply: false
+---
+
+# Fonts & icons
+
+Full checklist: `docs/static-site-standards.md` (Fonts & icons).
+
+## Google Fonts
+
+- Preconnect: `fonts.googleapis.com`, `fonts.gstatic.com` (`crossorigin`)
+- Single `<link>` in `<head>` with `&display=swap`; variable fonts when available
+- Only weights/styles in use; max 2 families (body + display)
+- `&text=` for small glyph subsets (logo/hero)
+- Optional: self-host woff2 + `<link rel="preload" as="font" type="font/woff2" crossorigin>`
+- System font stack always in `font-family` fallback chain
+
+## Material Symbols
+
+- Prefer Material Symbols (variable) over legacy Material Icons
+- `&display=block`; limit FILL/wght/GRAD/opsz axes to what you need
+- Decorative: `aria-hidden="true"`; icon-only controls: `aria-label`
+- **Preferred for perf/a11y:** inline SVG from Google Fonts icon export (zero icon-font network)
+
+## color-scheme
+
+- `<meta name="color-scheme" content="light dark">` and CSS `color-scheme` on `:root`

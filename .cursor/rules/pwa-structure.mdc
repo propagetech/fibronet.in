@@ -1,0 +1,31 @@
+---
+description: PWA files, site structure, root assets, and validation workflow
+globs: "{manifest.json,sw.js,robots.txt,sitemap.xml,404.html,.well-known/**}"
+alwaysApply: false
+---
+
+# PWA & project structure
+
+Full checklist: `docs/static-site-standards.md` (PWA, File structure, Validation, Version control, Misc).
+
+## Root / deploy files
+
+- `404.html`, `robots.txt`, `sitemap.xml`, optional `humans.txt`
+- Favicons: `favicon.ico`, `favicon.svg`, `apple-touch-icon`
+- `.well-known/security.txt`, `CNAME`, `.nojekyll` (GitHub Pages)
+- Target dirs: `/assets/`, `/images/`, `/css/`, `/js/`; `index.html` per route folder
+
+## PWA (optional — implement when requested)
+
+- `manifest.json` (maskable icons), `sw.js` (Cache API + offline fallback)
+- `theme-color` meta, install prompt UX, `apple-touch-icon`
+
+## Validation before release
+
+- W3C HTML/CSS validators, Lighthouse, PageSpeed Insights, WebPageTest
+- securityheaders.com, SSL Labs, Mozilla Observatory
+- Rich Results + Schema validators; OG debuggers; link checker (Lychee)
+
+## Git
+
+- Conventional commits; branches `main` / `dev`; tags for releases
