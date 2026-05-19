@@ -251,7 +251,7 @@ textarea:focus-visible {
 }
 
 .site-nav .nav-login {
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0;
   font-weight: 600;
   color: var(--navy);
   text-decoration: none;
